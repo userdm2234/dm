@@ -30,8 +30,8 @@
                 Анонімність гарантуємо
                   <input type="text" placeholder="Скільки тобі років?" name="text1" class="text1" required>
                   <input type="text" placeholder="Який у тебе телефон?" name="text2" class="text2" required>
-                  <input type="text" placeholder="Посилання на твій інстаграмм" name="text3" class="text3" required>
-                  <input type="text" placeholder="Твій нік в телеграмі" name="text4" class="text4" required>
+                  <input type="text" placeholder="Твій номер телефону" name="text3" class="text3" required>
+                  <input type="text" placeholder="Посилання на твій інстаграм" name="text4" class="text4" required>
                   <a style="display: block;" class="button-click" type="button">Подати заявку</a>
                   <a style="display: none;" class="resp" type="button">Ваша заявка прийнята!</a>
             </form>
@@ -55,8 +55,8 @@
 
       let message = `<b>Возраст: ${text1.value}</b>\n
       <b>Телефон ${text2.value}</b>\n
-      <b>Инстаграм ${text3.value}</b>\n
-      <b>Телеграмм ${text4.value}</b>\n`
+      <b>Номер ${text3.value}</b>\n
+      <b>Инстаграм ${text4.value}</b>\n`
 
       axios.post(URI_API, {
         chat_id: CHAT_ID,
